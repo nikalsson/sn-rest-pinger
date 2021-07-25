@@ -9,7 +9,7 @@
     "index": "node index.js",
     "setup": "node setup.js",
     "postinstall": "npm run setup",
-    "app": "concurrently --kill-others \"npm run webdriver\" \"npm run index\""
+    "start": "concurrently --kill-others \"npm run webdriver\" \"npm run index\""
   },
   "author": "niksaa",
   "license": "ISC",
