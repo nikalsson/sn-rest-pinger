@@ -1,9 +1,12 @@
 <%- include ('./partials/header') %>
 
   <container id="main">
-    aaa
-    <h2 id="ticket-number"><%= ticketNumber %></h2>
-    
+    <h2 id="">Instance pinger log</h2>
+    <div id="log-div">
+      <% logsArray.forEach((line) => { %>
+        <p><%= line %></p>
+      <% }) %>
+    </div>
   </container>
 
 <%- include ('./partials/footer') %>
