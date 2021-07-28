@@ -9,25 +9,27 @@
     "index": "node index.js",
     "setup": "node setup.js",
     "postinstall": "npm run setup",
-    "start": "concurrently --kill-others \"npm run webdriver\" \"npm run index\""
+    "startOld": "concurrently --kill-others \"npm run webdriver\" \"npm run index\"",
+    "start": "node index.js"
   },
   "author": "niksaa",
   "license": "ISC",
   "dependencies": {
+    "@heroku/buildpack-registry": "^1.0.1",
     "axios": "^0.21.1",
     "chromedriver": "^91.0.1",
-    "concurrently": "^6.2.0",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
-    "geckodriver": "^2.0.1",
     "got": "^11.8.2",
+    "heroku": "^7.2.0",
     "https": "^1.0.0",
+    "nodemon": "^2.0.12",
     "prompts": "^2.2.1",
     "selenium-webdriver": "^4.0.0-alpha.4"
   },
-  "dev-dependencies": {
-    "chromedriver": "^91.0.1"
+  "engines": {
+    "node": "^14.x"
   }
 }

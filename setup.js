@@ -10,7 +10,7 @@
     {
       type: 'number',
       name: 'webdriver',
-      message: 'Select a default webdriver: \n[1] - Chrome\n[2] - Firefox\n',
+      message: 'Select a default webdriver: \n[1] - Chrome\n[2] - Firefox (Geckodriver not included in package.json, remember to install it!)\n',
     },
     {
       type: 'text',
