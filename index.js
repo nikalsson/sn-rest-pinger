@@ -23,9 +23,9 @@ app.get("/", async (req, res) => {
 });
 
 app.get("/sn_id", async (req, res) => {
-  res.send("ACKNOWLEDGE")
+  res.send("ACKNOWLEDGE");
   global.lastPing = new Date();
-  writeToLog("GET REQUEST HIT, SET lastPing VARIABLE TO: " + global.lastPing);
+  writeToLog("/sn_id GET REQUEST HIT, SET lastPing VARIABLE TO: " + global.lastPing);
 });
 
 // listen for requests :)
@@ -35,8 +35,3 @@ const listener = app.listen(process.env.PORT || 3030, () => {
 
 // Start by getting a ticket or waking up the instance
 RESToperations.start();
-
-
-
-
-
